@@ -1,3 +1,9 @@
+.team-title {
+   -webkit-filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
+   filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
+   margin-bottom: 30px;
+}
+
 .view-first img {
    -webkit-transition: all 0.2s linear;
    -moz-transition: all 0.2s linear;
