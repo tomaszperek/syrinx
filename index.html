@@ -32,10 +32,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- /css files -->
     <!-- js files -->
     <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <!-- /js files -->
 </head>
 <body>
 <!-- banner section -->
+<script id="page-template" type="text/x-handlebars-template">
 <section class="banner">
     <div class="container-fluid">
         <div class="navbar-wrapper">
@@ -52,15 +54,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </button>
                             <a class="navbar-brand" href="#"><h1><br/></h1></a>
                         </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Главная</a></li>
-                                <li><a href="#about">О нас</a></li>
-                                <li><a href="#team">Состав</a></li>
-                                <li><a href="#work">Наша музыка</a></li>
-                                <li><a href="#contact">Контакт</a></li>
-                            </ul>
-                        </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">{{main}}</a></li>
+                                    <li><a href="#about">{{about}}</a></li>
+                                    <li><a href="#team">{{members}}</a></li>
+                                    <li><a href="#work">{{ourMusic}}</a></li>
+                                    <li><a href="#contact">{{contact}}</a></li>
+                                </ul>
+
+                            </div>
 
                     </div>
                 </nav>
@@ -94,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="container">
                                 <p>
 
-                                    <span class="text-with-shadow"><br/><br/>Сиринкс</span>
+                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
                                 </p>
                             </div>
                         </div>
@@ -105,7 +109,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              style="background-image:url('images/banner_syrinx_2.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
                             <div class="container">
                                 <p>
-                                    <span class="text-with-shadow"><br/><br/>Сиринкс</span>
+                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
                                 </p>
                             </div>
                         </div>
@@ -116,7 +120,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              style="background-image:url('images/banner_syrinx_3.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
                             <div class="container">
                                 <p>
-                                    <span class="text-with-shadow"><br/><br/>Сиринкс</span>
+                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
                                 </p>
                             </div>
                         </div>
@@ -127,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              style="background-image:url('images/banner_syrinx_4.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
                             <div class="container">
                                 <p>
-                                    <span class="text-with-shadow"><br/><br/>Сиринкс</span>
+                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
                                 </p>
                             </div>
                         </div>
@@ -138,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              style="background-image:url('images/banner_syrinx_5.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
                             <div class="container">
                                 <p>
-                                    <span class="text-with-shadow"><br/><br/>Сиринкс</span>
+                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
                                 </p>
                             </div>
                         </div>
@@ -149,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              style="background-image:url('images/banner_syrinx_6.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
                             <div class="container">
                                 <p>
-                                    <span class="text-with-shadow"><br/><br/>Сиринкс</span>
+                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
                                 </p>
                             </div>
                         </div>
@@ -165,27 +169,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <section class="about" id="about"
          style="background-image: url('images/wallpaper.jpg'); background-repeat: repeat; border-bottom: 2px solid saddlebrown">
     <div class="container"/>
-    <h2 class="text-center">История ансамбля</h2>
-    <p class="text-center" style="font-size: x-large; color: black; text-align: justify; font-style: italic;">&nbsp;&nbsp;&nbsp;Живет в
-        ансамбле трепетная душа прекрасной нимфы Сиринкс, которая очаровала Нину Авраменко и ее воспитанников в
-        Беларуси.
-        <br/>
-        &nbsp;&nbsp;&nbsp;Изначально ансамбль состоял из учеников Средней Специальной музыкальной школы при консерватории класса Нины
-        Авраменко. Сегодняшний ансамбль флейтистов "Сиринкс" состоит из молодых, одаренных музыкантов - выпускников
-        Белорусской государственной академии музыки. Это сплав талантливой молодости с профессиональной зрелостью. 
-        Ансамбль "Сиринкс" - лауреат Международного конкурса исполнителей камерной музыки. С мастерством участников
-        ансамбля знакомы слушатели многих городов Беларуси, ему аплодировали в России, Украине, Литве, Польше,
-        Люксембурге, Франции, Германии. Вот уже 16 лет коллекстив ансамбля сотрудничает с благотворительным немецким
-        фондом "Дома вместо Чернобыля", помогая в сборе средств на строительство жилья для переселенцев из чернобыльской
-        зоны Беларуси.  "Сиринкс" участвовал во многих международных фестивалях - это Крым, Карелия, Франция, Германия и
-        всюду о творчестве ансамбля слушатели отзываются с большим теплом. 
-        <br/>&nbsp;&nbsp;&nbsp;Проблемы репертуара в ансамбле не
-        существует. Музыканты исполняют произведения, которые им нравятся, ведь в коллективе выросли свои аранжировщики
-        - это Лариса Ласоцкая, Вадим Сидоров, Артем Немирский.   
-         <br/><br/>&nbsp;&nbsp;&nbsp; Душой и движущей силой "Сиринкса" является создатель и
-        бессменный руководитель, доцент Белорусской государственной академии музыки Нина Васильевна Авраменко, которая
-        сумела сначала воспитать и обучить таких музыкантов, а затем собрать их в коллектив единомышленников, желающих
-        творить вместе и с удовольствием. Именно поэтому искусство ансамбля всегда свежо и искренне. 
+    <h2 class="text-center">{{historyTitle}}</h2>
+    <p class="text-center" style="font-size: x-large; color: black; text-align: justify; font-style: italic; margin: 20px">{{{historyText}}}
     </p>
     </div>
 </section>
@@ -442,6 +427,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                                  target="_blank">W3layouts</a></p>
     </div>
 </section>
+</script>
 <!-- /footer section -->
 <a href="#0" class="cd-top">Top</a>
 <!-- js files -->
@@ -472,14 +458,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     })
 </script>
+
 <!-- back to top -->
+<script src="js/jQuery.lightninBox.js"></script>
+<script src="js/translations.js"></script>
 <script src="js/main.js"></script>
 <!-- /back to top -->
 <!-- js for work section -->
-<script src="js/jQuery.lightninBox.js"></script>
-<script type="text/javascript">
-    $(".lightninBox").lightninBox();
-</script>
 <!-- /js for work section -->
 <!-- js for tabs -->
 <script src="js/cbpFWTabs.js"></script>

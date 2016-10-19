@@ -16,6 +16,8 @@ jQuery(document).ready(function($){
 		}
 	});
 
+	$(".lightninBox").lightninBox();
+
 	//smooth scroll to top
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
@@ -24,5 +26,10 @@ jQuery(document).ready(function($){
 		 	}, scroll_top_duration
 		);
 	});
+
+	var template = $('#page-template').html();
+	var theData = translations.ru;
+	var theTemplate = Handlebars.compile (template);
+	$(document.body).append (theTemplate (theData));
 
 });
