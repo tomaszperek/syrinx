@@ -27,6 +27,11 @@ jQuery(document).ready(function($){
 		);
 	});
 
+	Handlebars.registerHelper("every_nth_skip_first", function(index, modBy, body) {
+		if ((index != 0) && (index % modBy == 0)) return body.fn(this);
+		else return "";
+	});
+
 	var template = $('#page-template').html();
 	var theData = translations.ru;
 	var theTemplate = Handlebars.compile (template);

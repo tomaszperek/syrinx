@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              style="background-image:url('images/banner_syrinx_0.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
                             <div class="container">
                                 <p>
-                                    <span class="text-with-shadow"><br/><br/>Сиринкс</span>
+                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
                                 </p>
                             </div>
                         </div>
@@ -178,192 +178,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- team section -->
 <section class="team" id="team" style="background-color: darkgray; border-bottom: 2px solid darkred">
     <div class="container">
-        <h3 class="text-center team-title">Состав ансамбля</h3>
+        <h3 class="text-center team-title">{{membersOfTheEnsemble}}</h3>
         <!--<p class="text-center"><br/></p>-->
         <div class="row">
+        {{#each membersList}}
+        {{#every_nth_skip_first @index 4}}</div><div class="row"><br/></div><div class="row">{{/every_nth_skip_first}}
+
             <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
                 <div class="team-agileits">
                     <div class="view view-first">
                         <div>
-                            <img src="images/NinVas2.jpg" alt="team" class="img-responsive">
+                            <img src="{{img}}" alt="team" class="img-responsive">
                         </div>
                         <div class="mask">
-                            <h5>Нина Авраменко</h5>
-                            <p class="w3ls1">Художественный руководитель</p>
+                            <h5>{{name}}</h5>
+                            <p class="w3ls1">{{function}}</p>
                             <span class="line2"></span>
-                            <p class="w3ls2">Художественный руководитель</p>
+                            <p class="w3ls2">{{bio}}</p>
 
                         </div>
                     </div>
-                    <h4 style="background-color: whitesmoke">Нина Авраменко</h4>
+                    <h4 style="background-color: whitesmoke">{{name}}</h4>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-                <div class="team-agileits">
-                    <div class="view view-first">
-                        <div>
-                            <img src="images/Larisa.jpg" alt="team" class="img-responsive">
-                        </div>
-                        <div class="mask">
-                            <h5>Лариса Ласоцкая</h5>
-                            <p class="w3ls1">Флейта</p>
-                            <span class="line2"></span>
-                            <p class="w3ls2">Первая и вторая флейта</p>
-
-                        </div>
-                    </div>
-                    <h4 style="background-color: whitesmoke">Лариса Ласоцкая</h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-                <div class="team-agileits">
-                    <div class="view view-first">
-                        <div>
-                            <img src="images/Nadia.jpg" alt="team" class="img-responsive">
-                        </div>
-                        <div class="mask">
-                            <h5>Надежда Мелешко</h5>
-                            <p class="w3ls1">Флейта</p>
-                            <span class="line2"></span>
-                            <p class="w3ls2">Первая и вторая флейта</p>
-
-                        </div>
-                    </div>
-                    <h4 style="background-color: whitesmoke">Надежда Мелешко</h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-                <div class="team-agileits">
-                    <div class="view view-first">
-                        <div>
-                            <img src="images/helena_perek.jpg" alt="team" class="img-responsive">
-                        </div>
-                        <div class="mask">
-                            <h5>Елена Пэрэк</h5>
-                            <p class="w3ls1">Флейта</p>
-                            <span class="line2"></span>
-                            <p class="w3ls2">Первая и вторая флейта</p>
-
-                        </div>
-                    </div>
-                    <h4 style="background-color: whitesmoke">Елена Пэрэк</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row"><br/></div>
-        <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-            <div class="team-agileits">
-                <div class="view view-first">
-                    <div>
-                        <img src="images/Agafon.jpg" alt="team" class="img-responsive">
-                    </div>
-                    <div class="mask">
-                        <h5>Сергей Кортес</h5>
-                        <p class="w3ls1">Флейта</p>
-                        <span class="line2"></span>
-                        <p class="w3ls2">Первая и вторая флейта</p>
-
-                    </div>
-                </div>
-                <h4 style="background-color: whitesmoke">Сергей Кортес</h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-            <div class="team-agileits">
-                <div class="view view-first">
-                    <div>
-                        <img src="images/Vitek.jpg" alt="team" class="img-responsive">
-                    </div>
-                    <div class="mask">
-                        <h5>Виктор Алексеев</h5>
-                        <p class="w3ls1">Флейта</p>
-                        <span class="line2"></span>
-                        <p class="w3ls2">Первая и вторая флейта</p>
-
-                    </div>
-                </div>
-                <h4 style="background-color: whitesmoke">Виктор Алексеев</h4>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-            <div class="team-agileits">
-                <div class="view view-first">
-                    <div>
-                        <img src="images/Arsen.jpg" alt="team" class="img-responsive">
-                    </div>
-                    <div class="mask">
-                        <h5>Арсен Замтарадзе</h5>
-                        <p class="w3ls1">Флейта</p>
-                        <span class="line2"></span>
-                        <p class="w3ls2">Первая и вторая флейта</p>
-
-                    </div>
-                </div>
-                <h4 style="background-color: whitesmoke">Арсен Замтарадзе</h4>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-            <div class="team-agileits">
-                <div class="view view-first">
-                    <div>
-                        <img src="images/Artem.jpg" alt="team" class="img-responsive">
-                    </div>
-                    <div class="mask">
-                        <h5>Артём Немирский</h5>
-                        <p class="w3ls1">Флейта</p>
-                        <span class="line2"></span>
-                        <p class="w3ls2">Первая и вторая флейта</p>
-
-                    </div>
-                </div>
-                <h4 style="background-color: whitesmoke">Артем Немирский</h4>
-            </div>
-        </div>
+        {{/each}}
     </div>
-    <div class="row"><br/></div>
-    <div class="row">
 
-    <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-        <div class="team-agileits">
-            <div class="view view-first">
-                <div>
-                    <img src="images/Vadim.jpg" alt="team" class="img-responsive">
-                </div>
-                <div class="mask">
-                    <h5>Вадим Сидоров</h5>
-                    <p class="w3ls1">Флейта</p>
-                    <span class="line2"></span>
-                    <p class="w3ls2">Первая и вторая флейта</p>
-
-                </div>
-            </div>
-            <h4 style="background-color: whitesmoke">Вадим Сидоров</h4>
-        </div>
-    </div>
-    </div>
     </div>
 </section>
 <!-- /team section -->
 <!-- work section -->
 <section class="work" id="work" style="background-image: url('images/our_music_bkg.jpg'); border-bottom: 2px solid saddlebrown">
     <div class="container">
-        <h3 class="text-center">Наша музыка</h3>
-        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <h3 class="text-center">{{ourMusic}}</h3>
+        <p class="text-center">{{ourMusicText}}</p>
         <section>
+            {{#each videos}}
             <div class="video">
                 <embed width="350" height="270"
-                       src="http://www.youtube.com/embed/Ebc-pR_a00w">
+                       src="{{src}}">
             </div>
-            <div class="video">
-                <embed width="350" height="270"
-                       src="http://www.youtube.com/embed/Ebc-pR_a00w">
-            </div>
-            <div class="video">
-                <embed width="350" height="270"
-                       src="http://www.youtube.com/embed/Ebc-pR_a00w">
-            </div>
+            {{/each}}
             <div><br/><br/><br/><br/><br/></div>
         </section>
     </div>
