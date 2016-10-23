@@ -33,7 +33,9 @@ jQuery(document).ready(function($){
 	});
 
 	var template = $('#page-template').html();
-	var theData = translations.ru;
+	var localeKey = locale();
+	localeKey = translations.hasOwnProperty(localeKey) ? localeKey : "ru";
+	var theData = translations[localeKey];
 	var theTemplate = Handlebars.compile (template);
 	$(document.body).append (theTemplate (theData));
 
