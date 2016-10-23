@@ -24,6 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="css/jQuery.lightninBox.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/team.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/flag-icon.min.css" rel="stylesheet" type="text/css" media="all"/>
     <script src="js/modernizr.custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js"></script>
@@ -31,24 +32,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 <!-- banner section -->
 <script id="page-template" type="text/x-handlebars-template">
-<section class="banner">
-    <div class="container-fluid">
-        <div class="navbar-wrapper">
-            <div class="container">
-                <nav class="navbar navbar-inverse navbar-static-top cl-effect-7">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#"><h1><br/></h1></a>
-                        </div>
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-inverse navbar-static-top cl-effect-7">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><h1><br/></h1></a>
+                            </div>
                             <div id="navbar" class="navbar-collapse collapse">
-
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">{{main}}</a></li>
                                     <li><a href="#about">{{about}}</a></li>
@@ -56,141 +56,154 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <li><a href="#work">{{ourMusic}}</a></li>
                                     <li><a href="#contact">{{contact}}</a></li>
                                 </ul>
-
+                            </div>
+                            <div class="lang-section">
+                               <a href="?lang=ru"><span class="flag-icon flag-icon-ru"></span></a>
+                               <a href="?lang=pl"><span class="flag-icon flag-icon-pl"></span></a>
+                               <a href="?lang=en"><span class="flag-icon flag-icon-gb"></span></a>
                             </div>
 
+                        </div>
+                    </nav>
+
+
+                </div>
+            </div>
+            <div id="boot_slider">
+                <div class="col-xs-12 col-lg-12" id="slider_full">
+                    <div class="container">
+                        <!--<div class="slider_nav col-xs-12 col-lg-12">-->
+                        <!--<p id="slider_prev"><i class="fa-arrow-circle-left fa"></i></p>-->
+                        <!--<p id="slider_next"><i class="fa-arrow-circle-right fa"></i></p>-->
+                        <!--</div>-->
                     </div>
-                </nav>
+
+
+                    <div class="col-xs-12 col-lg-12" id="slider_full_items">
+                        {{#each slides}}
+                        <div class="col-xs-12 col-lg-12 slider_full_item">
+                            <div class="opacity"></div>
+                            <div class="img_large"
+                                 style="background-image:url('{{this}}'); background-position:center; background-repeat:no-repeat; background-sixe">
+                                <div class="container">
+                                    <p>
+                                        <span class="text-with-shadow"><br/><br/>{{../syrinx}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="col-xs-12 col-lg-12" id="slider_loading"></div>
+                </div>
             </div>
         </div>
-        <div id="boot_slider">
-            <div class="col-xs-12 col-lg-12" id="slider_full">
-                <div class="container">
-                    <!--<div class="slider_nav col-xs-12 col-lg-12">-->
-                    <!--<p id="slider_prev"><i class="fa-arrow-circle-left fa"></i></p>-->
-                    <!--<p id="slider_next"><i class="fa-arrow-circle-right fa"></i></p>-->
-                    <!--</div>-->
+    </section>
+    <!-- /banner section -->
+    <!-- about section -->
+    <section class="about" id="about"
+             style="background-image: url('images/wallpaper.jpg'); background-repeat: repeat; border-bottom: 2px solid saddlebrown">
+        <div class="container"/>
+        <h2 class="text-center">{{historyTitle}}</h2>
+        <p class="text-center"
+           style="font-size: x-large; color: black; text-align: justify; font-style: italic; margin: 20px">
+            {{{historyText}}}
+        </p>
+        </div>
+    </section>
+    <!-- /about section -->
+    <!-- team section -->
+    <section class="team" id="team" style="background-color: darkgray; border-bottom: 2px solid darkred">
+        <div class="container">
+            <h3 class="text-center team-title">{{membersOfTheEnsemble}}</h3>
+            <!--<p class="text-center"><br/></p>-->
+            <div class="row">
+                {{#each membersList}}
+                {{#every_nth_skip_first @index 4}}
+            </div>
+            <div class="row"><br/></div>
+            <div class="row">{{/every_nth_skip_first}}
+
+                <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
+                    <div class="team-agileits">
+                        <div class="view view-first">
+                            <div>
+                                <img src="{{img}}" alt="team" class="img-responsive">
+                            </div>
+                            <div class="mask">
+                                <h5>{{name}}</h5>
+                                <p class="w3ls1">{{function}}</p>
+                                <span class="line2"></span>
+                                <p class="w3ls2">{{bio}}</p>
+
+                            </div>
+                        </div>
+                        <h4 style="background-color: whitesmoke">{{name}}</h4>
+                    </div>
                 </div>
+                {{/each}}
+            </div>
 
+        </div>
+    </section>
+    <!-- /team section -->
+    <!-- work section -->
+    <section class="work" id="work"
+             style="background-image: url('images/our_music_bkg.jpg'); border-bottom: 2px solid saddlebrown">
+        <div class="container">
+            <h3 class="text-center">{{ourMusic}}</h3>
+            <p class="text-center">{{ourMusicText}}</p>
+            <section>
+                {{#each videos}}
+                <div class="video">
+                    <embed width="350" height="270"
+                           src="{{src}}">
+                </div>
+                {{/each}}
+                <div><br/><br/><br/><br/><br/></div>
+            </section>
+        </div>
+    </section>
+    <!-- /work section -->
+    <section class="footer" id="contact">
+        <div class="container">
 
-                <div class="col-xs-12 col-lg-12" id="slider_full_items">
-                    {{#each slides}}
-                    <div class="col-xs-12 col-lg-12 slider_full_item">
-                        <div class="opacity"></div>
-                        <div class="img_large"
-                             style="background-image:url('{{this}}'); background-position:center; background-repeat:no-repeat; background-sixe">
-                            <div class="container">
-                                <p>
-                                    <span class="text-with-shadow"><br/><br/>{{../syrinx}}</span>
+            <div class="col-lg-4 col-md-4 footer-agile">
+                <h3>{{contact}}</h3>
+                <div class="contact-w3ls">
+                    <div class="row">
+                        <div class="col-xs-4 contact-agile1">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-8 contact-agile2">
+                            <div class="address">
+                                <!--<h4>Напишите нам</h4>-->
+                                <p style="font-size: larger"><a href="mailto:ninvas_f@mail.ru">ninvas_f@mail.ru</a></p>
+                                <p style="font-size: larger"><a href="mailto:helena.perek@wp.pl">helena.perek@wp.pl</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    {{/each}}
-                </div>
-                <div class="col-xs-12 col-lg-12" id="slider_loading"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /banner section -->
-<!-- about section -->
-<section class="about" id="about"
-         style="background-image: url('images/wallpaper.jpg'); background-repeat: repeat; border-bottom: 2px solid saddlebrown">
-    <div class="container"/>
-    <h2 class="text-center">{{historyTitle}}</h2>
-    <p class="text-center" style="font-size: x-large; color: black; text-align: justify; font-style: italic; margin: 20px">{{{historyText}}}
-    </p>
-    </div>
-</section>
-<!-- /about section -->
-<!-- team section -->
-<section class="team" id="team" style="background-color: darkgray; border-bottom: 2px solid darkred">
-    <div class="container">
-        <h3 class="text-center team-title">{{membersOfTheEnsemble}}</h3>
-        <!--<p class="text-center"><br/></p>-->
-        <div class="row">
-        {{#each membersList}}
-        {{#every_nth_skip_first @index 4}}</div><div class="row"><br/></div><div class="row">{{/every_nth_skip_first}}
-
-            <div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
-                <div class="team-agileits">
-                    <div class="view view-first">
-                        <div>
-                            <img src="{{img}}" alt="team" class="img-responsive">
+                    <div class="row">
+                        <div class="col-xs-4 contact-agile1">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
                         </div>
-                        <div class="mask">
-                            <h5>{{name}}</h5>
-                            <p class="w3ls1">{{function}}</p>
-                            <span class="line2"></span>
-                            <p class="w3ls2">{{bio}}</p>
-
-                        </div>
-                    </div>
-                    <h4 style="background-color: whitesmoke">{{name}}</h4>
-                </div>
-            </div>
-        {{/each}}
-    </div>
-
-    </div>
-</section>
-<!-- /team section -->
-<!-- work section -->
-<section class="work" id="work" style="background-image: url('images/our_music_bkg.jpg'); border-bottom: 2px solid saddlebrown">
-    <div class="container">
-        <h3 class="text-center">{{ourMusic}}</h3>
-        <p class="text-center">{{ourMusicText}}</p>
-        <section>
-            {{#each videos}}
-            <div class="video">
-                <embed width="350" height="270"
-                       src="{{src}}">
-            </div>
-            {{/each}}
-            <div><br/><br/><br/><br/><br/></div>
-        </section>
-    </div>
-</section>
-<!-- /work section -->
-<section class="footer" id="contact">
-    <div class="container">
-
-        <div class="col-lg-4 col-md-4 footer-agile">
-            <h3>{{contact}}</h3>
-            <div class="contact-w3ls">
-                <div class="row">
-                    <div class="col-xs-4 contact-agile1">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-8 contact-agile2">
-                        <div class="address">
-                            <!--<h4>Напишите нам</h4>-->
-                            <p style="font-size: larger"><a href="mailto:ninvas_f@mail.ru">ninvas_f@mail.ru</a></p>
-                            <p style="font-size: larger"><a href="mailto:helena.perek@wp.pl">helena.perek@wp.pl</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 contact-agile1">
-                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-8 contact-agile2">
-                        <div class="address">
-                            <!--<h4>Позвоните нам</h4>-->
-                            <p style="font-size: larger">+375 29 630 69 59 (BY, RU)</p>
-                            <p style="font-size: larger">+48 788 856 756 (PL, EN)</p>
+                        <div class="col-xs-8 contact-agile2">
+                            <div class="address">
+                                <!--<h4>Позвоните нам</h4>-->
+                                <p style="font-size: larger">+375 29 630 69 59 (BY, RU)</p>
+                                <p style="font-size: larger">+48 788 856 756 (PL, EN)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <hr>
-    <p class="copyright">Design by <a href="http://w3layouts.com/"
-                                                                                 target="_blank">W3layouts</a></p>
-    </div>
-</section>
+        <hr>
+        <p class="copyright">Design by <a href="http://w3layouts.com/"
+                                          target="_blank">W3layouts</a></p>
+        </div>
+    </section>
 </script>
 <!-- /footer section -->
 <a href="#0" class="cd-top">Top</a>

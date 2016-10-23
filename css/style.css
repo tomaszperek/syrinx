@@ -5,6 +5,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 /*-- reset code --*/
 
+div.lang-section {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+}
+
 span.text-with-shadow{
 	font-family: 'Rurintania' !important;
 	text-transform: none !important;
