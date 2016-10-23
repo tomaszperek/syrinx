@@ -80,85 +80,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <!--</div>-->
                 </div>
 
-                <div class="col-xs-12 col-lg-12" id="slider_full_items">
-                    <div class="col-xs-12 col-lg-12 slider_full_item">
-                        <div class="opacity"></div>
-                        <div class="img_large"
-                             style="background-image:url('images/banner_syrinx_0.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
-                            <div class="container">
-                                <p>
-                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-lg-12 slider_full_item">
-                        <div class="opacity"></div>
-                        <div class="img_large"
-                             style="background-image:url('images/banner_syrinx_1.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
-                            <div class="container">
-                                <p>
 
-                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-xs-12 col-lg-12" id="slider_full_items">
+                    {{#each slides}}
                     <div class="col-xs-12 col-lg-12 slider_full_item">
                         <div class="opacity"></div>
                         <div class="img_large"
-                             style="background-image:url('images/banner_syrinx_2.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
+                             style="background-image:url('{{this}}'); background-position:center; background-repeat:no-repeat; background-sixe">
                             <div class="container">
                                 <p>
-                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
+                                    <span class="text-with-shadow"><br/><br/>{{../syrinx}}</span>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-12 slider_full_item">
-                        <div class="opacity"></div>
-                        <div class="img_large"
-                             style="background-image:url('images/banner_syrinx_3.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
-                            <div class="container">
-                                <p>
-                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-lg-12 slider_full_item">
-                        <div class="opacity"></div>
-                        <div class="img_large"
-                             style="background-image:url('images/banner_syrinx_4.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
-                            <div class="container">
-                                <p>
-                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-lg-12 slider_full_item">
-                        <div class="opacity"></div>
-                        <div class="img_large"
-                             style="background-image:url('images/banner_syrinx_5.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
-                            <div class="container">
-                                <p>
-                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-lg-12 slider_full_item">
-                        <div class="opacity"></div>
-                        <div class="img_large"
-                             style="background-image:url('images/banner_syrinx_6.jpg'); background-position:center; background-repeat:no-repeat; background-sixe">
-                            <div class="container">
-                                <p>
-                                    <span class="text-with-shadow"><br/><br/>{{syrinx}}</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    {{/each}}
                 </div>
                 <div class="col-xs-12 col-lg-12" id="slider_loading"></div>
             </div>
@@ -229,27 +165,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
 
         <div class="col-lg-4 col-md-4 footer-agile">
-            <h3>Our Links</h3>
+            <h3>{{contact}}</h3>
             <div class="contact-w3ls">
-                <div class="row">
-                    <div class="col-xs-4 contact-agile1">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-8 contact-agile2">
-                        <div class="address">
-                            <h4>Visit Us</h4>
-                            <p>Jack street,Chicago,USA.</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xs-4 contact-agile1">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </div>
                     <div class="col-xs-8 contact-agile2">
                         <div class="address">
-                            <h4>Mail Us</h4>
-                            <p><a href="mailto:email@example.com">email@example.com</a></p>
+                            <!--<h4>Напишите нам</h4>-->
+                            <p style="font-size: larger"><a href="mailto:ninvas_f@mail.ru">ninvas_f@mail.ru</a></p>
+                            <p style="font-size: larger"><a href="mailto:helena.perek@wp.pl">helena.perek@wp.pl</a></p>
                         </div>
                     </div>
                 </div>
@@ -259,19 +185,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="col-xs-8 contact-agile2">
                         <div class="address">
-                            <h4>Call Us</h4>
-                            <p>+01 0101 01010101</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 contact-agile1">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-8 contact-agile2">
-                        <div class="address">
-                            <h4>Our Working Hours</h4>
-                            <p>Monday - Friday : 08 AM - 07 PM</p>
+                            <!--<h4>Позвоните нам</h4>-->
+                            <p style="font-size: larger">+375 29 630 69 59 (BY, RU)</p>
+                            <p style="font-size: larger">+48 788 856 756 (PL, EN)</p>
                         </div>
                     </div>
                 </div>
@@ -279,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <hr>
-    <p class="copyright">&copy; 2016 Euphony. All rights reserved | Design by <a href="http://w3layouts.com/"
+    <p class="copyright">Design by <a href="http://w3layouts.com/"
                                                                                  target="_blank">W3layouts</a></p>
     </div>
 </section>
