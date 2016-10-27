@@ -48,13 +48,6 @@ function _sliderInit() {
 		_slideTo("prev");
 	});
 
-	// Пауза при наведении мыши | Hover pause
-	$("#slider_full").hover(function(){
-		$slideProgress.pause();
-		
-	}, function(){
-		$slideProgress.resume();
-	});
 }
 
 var $slideProgress = {
