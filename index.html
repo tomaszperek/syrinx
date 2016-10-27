@@ -25,7 +25,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="css/team.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/flag-icon.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <script src="js/modernizr.custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.16.4/lodash.min.js"></script>
 </head>
@@ -51,6 +50,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#">{{main}}</a></li>
+                                    <li><a href="#events">{{eventsShort}}</a></li>
                                     <li><a href="#about">{{about}}</a></li>
                                     <li><a href="#team">{{members}}</a></li>
                                     <li><a href="#work">{{ourMusic}}</a></li>
@@ -97,6 +97,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="col-xs-12 col-lg-12" id="slider_loading"></div>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <section class="events" id="events" style="border-bottom: 2px solid saddlebrown">
+        <div class="container">
+        	<h2 class="text-center">{{eventsTitle}}</h2>
+        	{{#each events}}
+        	<div class="row">
+        		<div class="col-xs-4 col-lg-4">{{date}}</div>
+        		<div class="col-xs-8 col-lg-8">{{description}}</div>
+        	</div>
+        	{{/each}}
+            
         </div>
     </section>
     <!-- /banner section -->
@@ -243,6 +256,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- js for work section -->
 <!-- /js for work section -->
 <!-- js for tabs -->
+    <script src="js/modernizr.custom.js"></script>      
 <script src="js/cbpFWTabs.js"></script>
 <script src="js/jQuery.lightninBox.js"></script>
 <script>
