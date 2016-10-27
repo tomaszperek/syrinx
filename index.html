@@ -100,18 +100,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </section>
 
-    <section class="events" id="events" style="border-bottom: 2px solid saddlebrown">
-        <div class="container">
-        	<h2 class="text-center">{{eventsTitle}}</h2>
-        	{{#each events}}
-        	<div class="row">
-        		<div class="col-xs-4 col-lg-4">{{date}}</div>
-        		<div class="col-xs-8 col-lg-8">{{description}}</div>
-        	</div>
-        	{{/each}}
-            
-        </div>
-    </section>
+
     <!-- /banner section -->
     <!-- about section -->
     <section class="about" id="about"
@@ -160,6 +149,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </section>
     <!-- /team section -->
+    <section class="events" id="events" style="border-bottom: 2px solid saddlebrown">
+        <div class="container">
+            <h2 class="text-center">{{eventsTitle}}</h2>
+            {{#each events}}
+            <div class="row">
+                <div class="col-xs-4 col-lg-4" style="font-size: larger;">{{date}}</div>
+                <div class="col-xs-8 col-lg-8" style="font-size: larger;">{{description}}</div>
+            </div>
+            {{/each}}
+            
+        </div>
+    </section>
     <!-- work section -->
     <section class="work" id="work"
              style="background-image: url('images/our_music_bkg.jpg'); border-bottom: 2px solid saddlebrown">
