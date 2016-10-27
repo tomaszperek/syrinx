@@ -6,8 +6,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /*-- reset code --*/
 a.lang-link {
 	font-size: large;
-	-webkit-filter: brightness(200%) drop-shadow(8px 8px 10px black); !important; /* Chrome, Safari, Opera */
-	filter: brightness(200%) drop-shadow(8px 8px 10px black); !important;
 
 }
 a.lang-link:link {
