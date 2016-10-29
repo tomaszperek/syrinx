@@ -168,10 +168,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <p class="text-center">{{ourMusicText}}</p>
             <section>
                 {{#each videos}}
-                <div class="video">
-                    <embed width="330" height="250"
-                           src="{{src}}">
-                </div>
+                <iframe type="text/html" width="320" height="300"
+                        src="{{src}}?enablejsapi=1&origin=http://syrinx.by"
+                        frameborder="0" allowfullscreen></iframe>
                 {{/each}}
                 <div><br/><br/><br/><br/><br/></div>
             </section>
