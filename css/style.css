@@ -1536,6 +1536,13 @@ p.copyright a:hover {
     right: 20px;
     bottom: 20px;
   }
+
+	.text-with-shadow {
+		font-size: 120px !important;
+	}
+	p.about-text {
+		font-size: x-large !important;
+	}
 }
 @media only screen and (min-width: 1024px) {
 	.cd-top {
@@ -1545,12 +1552,7 @@ p.copyright a:hover {
     bottom: 30px;
   }
 
-	.text-with-shadow {
-		font-size: 120px !important;
-	}
-	p.about-text {
-		font-size: x-large !important;
-	}
+
 }
 /*-- back to top --*/
 
