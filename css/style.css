@@ -50,8 +50,8 @@ p.about-text {
 div.video {
 	display: inline-block;
 	margin: 0px 10px 0px 10px;
-	-webkit-filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
-	filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
+	-webkit-filter: drop-shadow(2px 15px 8px rgba(0,0,0,0.5));
+	filter: drop-shadow(2px 15px 8px rgba(0,0,0,0.5));
 }
 div.audio_sound_cloud {
 	display: inline-block;
@@ -768,8 +768,8 @@ section.team p.text-center {
 .team-agileits {
     border: 0px solid #777;
     text-align: Center;
-	-webkit-filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
-	filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
+	-webkit-filter: drop-shadow(2px 15px 8px rgba(0,0,0,0.5));
+	filter: drop-shadow(2px 15px 8px rgba(0,0,0,0.5));
 
 }
 section.team h4 {
