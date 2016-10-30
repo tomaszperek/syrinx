@@ -17,6 +17,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="http://allfont.net/allfont.css?fonts=drpodecorru" rel="stylesheet" type="text/css"/>
     <link href="http://allfont.net/allfont.css?fonts=rurintania" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -216,6 +218,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                           target="_blank">W3layouts</a></p>
         </div>
     </section>
+    <section style="background-color: black;">
+    {{#each slides}}<img width="1" height="1" src="{{this}}"/>{{/each}}
+
+    </section>
 
 <script>
     $(document).ready(function () {
@@ -276,5 +282,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/boot_slider.js" type="text/javascript"></script>
 <!-- /js files for banner -->
 <!-- /js files -->
+
 </body>
 </html>
