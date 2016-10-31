@@ -1530,6 +1530,12 @@ p.copyright a:hover {
 	background-color: #000;
 	opacity: 1;
 }
+@media only screen and (min-width: 100px) {
+	.text-with-shadow {
+		font-size: 60px !important;
+		margin-top: 140px;
+	}
+}
 @media only screen and (min-width: 768px) {
 	.cd-top {
 	height: 40px;
@@ -1540,6 +1546,7 @@ p.copyright a:hover {
 
 	.text-with-shadow {
 		font-size: 120px !important;
+		margin-top: 0px;
 	}
 	p.about-text {
 		font-size: x-large !important;
@@ -1916,10 +1923,10 @@ ul.nav.navbar-nav {
     right: auto;
 }
 #slider_full_items, #slider_full_items .opacity, #slider_full_items .img_large {
-    height: 349px;
+    height: 549px;
 }
 #slider_full_items .img_large {
-	min-height:349px;
+	min-height:549px;
 }
 #slider_full_items p {
     top: 90px;
@@ -1963,7 +1970,7 @@ section.team p.text-center:before,section.team p.text-center:after,section.testi
 
 @media (max-width: 667px) {
 #slider_full_items, #slider_full_items .opacity, #slider_full_items .img_large {
-    height: 310px;
+    height: 510px;
 }
 #slider_full_items .img_large {
 	min-height:310px;
