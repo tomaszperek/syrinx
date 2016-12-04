@@ -56,6 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <li><a href="#team">{{members}}</a></li>
                                     <li><a href="#events">{{eventsShort}}</a></li>
                                     <li><a href="#work">{{ourMusic}}</a></li>
+                                    <li><a href="#discography">{{discographyTitle}}</a></li>
                                     <li><a href="#contact">{{contact}}</a></li>
                                 </ul>
                             </div>
@@ -119,6 +120,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section class="team" id="team" style="background-color: darkgray; border-bottom: 2px solid darkred">
         <div class="container">
             <h3 class="text-center team-title">{{membersOfTheEnsemble}}</h3>
+            <p class="text-center about-text">{{{membersText}}}</p>
             <!--<p class="text-center"><br/></p>-->
             <div class="row">
                 {{#each membersList}}
@@ -155,6 +157,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section class="events" id="events" style="border-bottom: 2px solid saddlebrown">
         <div class="container">
             <h2 class="text-center">{{eventsTitle}}</h2>
+            <p class="text-center about-text">{{{eventsText}}}</p>
             {{#each events}}
             <div class="row">
                 <div class="col-xs-4 col-lg-4" style="font-size: larger; font-weight: bold">{{date}}</div>
@@ -179,6 +182,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div><br/><br/><br/><br/><br/></div>
             </section>
         </div>
+    </section>
+    <section class="discography" id="discography">
+        <div class="container">
+            <h3 class="text-center">{{discographyTitle}}</h3>
+            <p class="text-center about-text">{{{discographyText}}}</p>
+            <br/>
+            <div class="row">
+        {{#each discography}}
+                {{#every_nth_skip_first @index 3}}</div><div class="row">{{/every_nth_skip_first}}
+            <div class="col-xs-4 col-lg-4"><img src="{{discImage}}" class="discImage"></div>
+        {{/each}}
+            </div>
+        </div>
+
     </section>
     <!-- /work section -->
     <section class="footer" id="contact">

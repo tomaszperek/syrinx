@@ -4,6 +4,22 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 /*-- reset code --*/
+
+section#discography {
+	padding: 100px;
+	background-color: rgba(196, 196, 188, 0.84);
+	border-bottom: 2px solid saddlebrown
+}
+
+.discImage {
+	width: 350px;
+	margin-bottom: 40px;
+	-webkit-filter: drop-shadow(8px 8px 10px black); !important; /* Chrome, Safari, Opera */
+	filter: drop-shadow(8px 8px 10px black); !important;
+
+
+}
+
 a.lang-link {
 	font-size: large;
 
@@ -409,7 +425,7 @@ section.about h2.text-center {
 	-webkit-filter: brightness(200%) drop-shadow(8px 8px 10px black); !important; /* Chrome, Safari, Opera */
 	filter: brightness(200%) drop-shadow(8px 8px 10px black); !important;
 }
-section.about h2.text-center:after {
+h2.text-center:after {
 	content: '';
     background-color:#e92381;
     width: 14%;
@@ -418,6 +434,27 @@ section.about h2.text-center:after {
     left: 43%;
     top: 71%;
     position: absolute;
+}
+h3.text-center:after {
+	content: '';
+    background-color:#e92381;
+    width: 20%;
+    height:5px;
+    display: block;
+    left: 40%;
+    top: 90%;
+    position: absolute;
+}
+
+section.team h3.text-center:after {
+	content: '';
+	background-color:#e92381;
+	width: 40%;
+	height:5px;
+	display: block;
+	left: 30%;
+	top: 90%;
+	position: absolute;
 }
 section.about p.text-center {
 	font-size:16px;
@@ -983,7 +1020,7 @@ section.work {
 	background: #e7ecea;
     color: #74777b;
 }
-section.work h3.text-center {
+h3.text-center {
 	font-size:40px;
 	font-weight:700;
 	padding-bottom:25px;

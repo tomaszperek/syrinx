@@ -32,11 +32,8 @@ jQuery(document).ready(function($){
 		else return "";
 	});
 
-	var template = $('#page-template').html();
-	var localeKey = locale();
-	localeKey = translations.hasOwnProperty(localeKey) ? localeKey : "ru";
-	var theData = translations[localeKey];
-	var theTemplate = Handlebars.compile (template);
+	var theData = model(locale());
+	var theTemplate = Handlebars.compile ($('#page-template').html());
 	$(document.body).append (theTemplate (theData));
 
 	$(".lightninBox").lightninBox();
