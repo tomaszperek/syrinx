@@ -33,7 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 <!-- banner section -->
 <script id="page-template" type="text/x-handlebars-template">
-    <section class="banner">
+    <section class="banner" style="border-bottom: 2px solid darkred">
         <div class="container-fluid">
             <div class="navbar-wrapper">
                 <div class="container">
@@ -54,7 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <li class="active"><a href="#">{{main}}</a></li>
                                     <li><a href="#about">{{about}}</a></li>
                                     <li><a href="#team">{{members}}</a></li>
-                                    <li><a href="#events">{{eventsShort}}</a></li>
+                                    <!--<li><a href="#events">{{eventsShort}}</a></li>-->
                                     <li><a href="#work">{{ourMusic}}</a></li>
                                     <li><a href="#discography">{{discographyTitle}}</a></li>
                                     <li><a href="#contact">{{contact}}</a></li>
@@ -97,7 +97,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         {{/each}}
                     </div>
-                    <div class="col-xs-12 col-lg-12" id="slider_loading"></div>
+                    <!--<div class="col-xs-12 col-lg-12" id="slider_loading"></div>-->
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- /banner section -->
     <!-- about section -->
     <section class="about" id="about"
-             style="background-image: url('images/wallpaper.jpg'); background-repeat: repeat; border-bottom: 2px solid saddlebrown">
+             style="background-image: url('images/wallpaper.jpg'); background-repeat: repeat; border-bottom: 2px solid darkred">
         <div class="container"/>
         <h2 class="text-center">{{historyTitle}}</h2>
         <p class="text-center about-text">
@@ -154,30 +154,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </section>
     <!-- /team section -->
-    <section class="events" id="events" style="border-bottom: 2px solid saddlebrown">
-        <div class="container">
-            <h2 class="text-center">{{eventsTitle}}</h2>
-            <p class="text-center about-text">{{{eventsText}}}</p>
-            {{#each events}}
-            <div class="row">
-                <div class="col-xs-4 col-lg-4" style="font-size: larger; font-weight: bold">{{date}}</div>
-                <div class="col-xs-8 col-lg-8" style="font-size: larger;">{{description}}</div>
-            </div>
-            {{/each}}
-            
-        </div>
-    </section>
+    <!--<section class="events" id="events" style="border-bottom: 2px solid darkred">-->
+        <!--<div class="container">-->
+            <!--<h2 class="text-center">{{eventsTitle}}</h2>-->
+            <!--<p class="text-center about-text">{{{eventsText}}}</p>-->
+            <!--{{#each events}}-->
+            <!--<div class="row">-->
+                <!--<div class="col-xs-4 col-lg-4" style="font-size: larger; font-weight: bold">{{date}}</div>-->
+                <!--<div class="col-xs-8 col-lg-8" style="font-size: larger;">{{description}}</div>-->
+            <!--</div>-->
+            <!--{{/each}}-->
+            <!---->
+        <!--</div>-->
+    <!--</section>-->
     <!-- work section -->
     <section class="work" id="work"
-             style="background-image: url('images/our_music_bkg.jpg'); border-bottom: 2px solid saddlebrown">
+             style="background-image: url('images/our_music_bkg.jpg'); border-bottom: 2px solid darkred">
         <div class="container">
             <h3 class="text-center">{{ourMusic}}</h3>
-            <p class="text-center">{{ourMusicText}}</p>
+            <!--<p class="text-center">{{ourMusicText}}</p>-->
             <section>
                 {{#each videos}}
                 <iframe type="text/html" width="320" height="300"
                         src="{{src}}?enablejsapi=1&origin=http://syrinx.by"
-                        frameborder="0" allowfullscreen></iframe>
+                        frameborder="0" allowfullscreen class="discImage" style="width: 320px !important; margin: 50px 25px 0 25px"></iframe>
                 {{/each}}
                 <div><br/><br/><br/><br/><br/></div>
             </section>
@@ -190,8 +190,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <br/>
             <div class="row">
         {{#each discography}}
-                {{#every_nth_skip_first @index 3}}</div><div class="row">{{/every_nth_skip_first}}
-            <div class="col-xs-4 col-lg-4"><img src="{{discImage}}" class="discImage"></div>
+                {{#every_nth_skip_first @index 6}}</div><div class="row row-centered">{{/every_nth_skip_first}}
+            <div class="col-xs-2 col-lg-2 col-centered"><img src="{{discImage}}" class="discImage"></div>
         {{/each}}
             </div>
         </div>
