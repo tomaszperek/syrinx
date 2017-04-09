@@ -21,7 +21,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 section#discography {
 	padding: 100px;
-	background-color: rgba(196, 196, 188, 0.84);
+	background-image: url("../images/metal2.jpg");
+	background-size: cover;
 	border-bottom: 2px solid saddlebrown
 }
 
@@ -467,14 +468,14 @@ h3.text-center:after {
 }
 
 section.team h3.text-center:after {
-	content: '';
-	background-color: transparent;
-	width: 40%;
-	height:2px;
-	display: block;
-	left: 30%;
-	top: 90%;
-	position: absolute;
+	/*content: '';*/
+	/*background-color: transparent;*/
+	/*width: 40%;*/
+	/*height:2px;*/
+	/*display: block;*/
+	/*left: 30%;*/
+	/*top: 90%;*/
+	/*position: absolute;*/
 }
 section.about p.text-center {
 	font-size:16px;
@@ -798,24 +799,24 @@ section.team h3.text-center {
 	color:#000;
 }
 section.team p.text-center:before {
-	content: '';
-    background-color: #a3a3a3;
-    width: 3%;
-    height: 3px;
-    display: block;
-    left: 22%;
-    top: 19%;
-    position: absolute;
+    /*content: '';*/
+    /*background-color: #a3a3a3;*/
+    /*width: 3%;*/
+    /*height: 3px;*/
+    /*display: block;*/
+    /*left: 22%;*/
+    /*top: 19%;*/
+    /*position: absolute;*/
 }
 section.team p.text-center:after {
-	content: '';
-    background-color: #a3a3a3;
-    width: 3%;
-    height: 3px;
-    display: block;
-    right:22%;
-    top: 19%;
-    position: absolute;
+    /*content: '';*/
+    /*background-color: #a3a3a3;*/
+    /*width: 3%;*/
+    /*height: 3px;*/
+    /*display: block;*/
+    /*right:22%;*/
+    /*top: 19%;*/
+    /*position: absolute;*/
 }
 section.team p.text-center {
 	font-size:16px;
@@ -1036,9 +1037,12 @@ section.testimonial p.test-p2 {
 /*-- /testimonial section --*/
 /*-- work section --*/
 section.work {
-	padding:100px 0;
-	background: #e7ecea;
+	padding:50px 0;
     color: #74777b;
+	background-image: url('../images/our_music_bkg.jpg');
+	/*background-size: contain;*/
+	/*filter: brightness(200%);*/
+	border-bottom: 2px solid darkred
 }
 h3.text-center {
 	font-size:40px;
@@ -1710,12 +1714,12 @@ section.footer .contact-w3ls p {
 	margin:20px 0 0 0;
 }
 section.team p.text-center:before {
-	left: 20%;
-    top: 16%;
+    /*left: 20%;*/
+    /*top: 16%;*/
 }
 section.team p.text-center:after {
-	right:20%;
-	top:16%;
+	/*right:20%;*/
+	/*top:16%;*/
 }
 section.testimonial p.text-center:before {
 	left: 30%;
@@ -1842,8 +1846,8 @@ section.info hr {
 	padding: 20px 0 30px;
 }
 section.team p.text-center:before {
-    left: 12%;
-	top:21%;
+    /*left: 12%;*/
+	/*top:21%;*/
 }
 section.team p.text-center:after {
     right: 12%;
