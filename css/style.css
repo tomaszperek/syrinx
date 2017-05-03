@@ -1787,10 +1787,10 @@ section.footer .contact-w3ls h4 {
 .slider_nav {
     top: 680px;
 }
-section.about h2.text-center, section.info h3.text-center, section.team h3.text-center, section.testimonial h3.text-center, section.work h3.text-center {
+section.about h2.text-center, section.info h3.text-center, section.discography h3.text-center, section.team h3.text-center, section.testimonial h3.text-center, section.work h3.text-center {
     font-size: 30px;
 }
-section.about, section.info, section.team, section.testimonial, section.work, section.footer {
+section.about, section.info, section.team, section.testimonial, section.work, section.footer section.discography {
     padding: 35px 0;
 }
 section.subs h3 {
@@ -2345,10 +2345,10 @@ section.footer .contact-w3ls .address {
 #slider_full_items .img_large { 
 	min-height:300px;
 }
-section.about, section.info, section.team, section.testimonial, section.work, section.footer {
+section.about, section.info, section.discography, section.team, section.testimonial, section.work, section.footer {
     padding: 30px 0;
 }
-section.about h2.text-center, section.info h3.text-center, section.team h3.text-center, section.testimonial h3.text-center, section.work h3.text-center {
+section.about h2.text-center, section.info h3.text-center, section.discography h3.text-center, section.team h3.text-center, section.testimonial h3.text-center, section.work h3.text-center {
     font-size: 24px;
 }
 section.about .about-agile {
