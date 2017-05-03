@@ -854,7 +854,7 @@ section.team h4 {
 .view div {
 	overflow:hidden;
 }
-.view .mask,.view .content {
+.view .mask, .view .content {
    width:100%;
    height:394px;
    position: absolute;
@@ -1714,7 +1714,7 @@ section.footer .contact-w3ls p {
 	font-size:14px;
 }
 .view .mask, .view .content {
-	height:270px;
+	height:394px;
 }
 .view h5 {
 	margin:20px 0 0 0;
@@ -1840,7 +1840,7 @@ section.info hr {
 	margin-bottom:30px;
 }
 .view .mask, .view .content {
-    height: 402px;
+    height: 394px;
 }
 .view h5 {
     margin: 70px 0 0 0;
@@ -2017,7 +2017,7 @@ section.about .about-agile {
     float: left;
 }
 .view .mask, .view .content {
-    height: 387px;
+    height: 394px;
 }
 .col-lg-3.col-md-3.col-sm-6.works-w3ls {
     padding: 0;
@@ -2049,7 +2049,7 @@ section.team p.text-center:before,section.team p.text-center:after,section.testi
     margin: 0 25px 0 223px;
 }
 .view .mask, .view .content {
-    height: 352px;
+    height: 394px;
 }
 section.footer h3:after {
     left: 278px;
@@ -2067,7 +2067,7 @@ section.footer h3:after {
     top: 345px;
 }
 .view .mask, .view .content {
-    height: 339px;
+    height: 394px;
 }
 .view h5 {
     margin: 40px 0 0 0;
@@ -2113,7 +2113,7 @@ section.footer .contact-w3ls i.fa {
 
 @media (max-width: 600px) {
 .view .mask, .view .content {
-    height: 319px;
+    height: 394px;
 }
 .view p.w3ls1 {
     padding: 10px 0 20px;
@@ -2138,7 +2138,7 @@ section.footer h3:after {
     margin: 0 25px 0 195px;
 }
 .view .mask, .view .content {
-    height: 302px;
+    height: 394px;
 }
 .view p.w3ls1 {
     padding: 5px 0 15px;
@@ -2184,7 +2184,7 @@ section.about .about-agile {
     margin: 20px 0 0 0;
 }
 .view .mask, .view .content {
-    height: 259px;
+    height: 394px;
 }
 .view ul.social-icons1 li {
 	margin-left:5px;
@@ -2229,7 +2229,7 @@ section.footer h3:after {
     width: 100%;
 }
 .view .mask, .view .content {
-    height: 424px;
+    height: 394px;
 }
 .view h5 {
     margin: 80px 0 0 0;
@@ -2358,7 +2358,7 @@ section.about .about-agile {
     width: 100%;
 }
 .view .mask, .view .content {
-    height: 330px;
+    height: 394px;
 }
 .view h5 {
     margin: 40px 0 0 0;
