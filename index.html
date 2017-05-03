@@ -136,6 +136,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <img src="{{img}}" alt="team" class="img-responsive">
                             </div>
                             <div class="mask">
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <span class="line2"></span>
                                 <h5>{{name}}</h5>
                                 <br/>
                                 <span class="line2"></span>
@@ -145,7 +150,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                             </div>
                         </div>
-                        <h4 style="background-color: whitesmoke">{{name}}</h4>
+                        <!--<h4 style="background-color: whitesmoke">{{name}}</h4>-->
                     </div>
                 </div>
                 {{/each}}
@@ -190,8 +195,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <br/>
             <div class="row">
         {{#each discography}}
-                {{#every_nth_skip_first @index 6}}</div><div class="row row-centered">{{/every_nth_skip_first}}
-            <div class="col-xs-2 col-lg-2 col-centered"><img src="{{discImage}}" class="discImage"></div>
+                {{#every_nth_skip_first @index 4}}</div><div class="row row-centered">{{/every_nth_skip_first}}
+            <div class="col-xs-3 col-lg-3 col-md-3 col-centered"><img src="{{discImage}}" class="discImage img-responsive"></div>
         {{/each}}
             </div>
         </div>
