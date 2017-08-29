@@ -177,14 +177,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <h3 class="text-center">{{ourMusic}}</h3>
             <!--<p class="text-center">{{ourMusicText}}</p>-->
-            <section>
+                <div class="row row-centered">
+
                 {{#each videos}}
-                <iframe type="text/html" width="320" height="300"
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-centered">
+                    <iframe type="text/html" width="320" height="300"
                         src="{{src}}?enablejsapi=1&origin=http://syrinx.by"
-                        frameborder="0" allowfullscreen class="discImage music-iframe"></iframe>
+                        frameborder="0" allowfullscreen class="music-iframe">
+                    </iframe>
+                </div>
                 {{/each}}
-                <div><br/><br/><br/><br/><br/></div>
-            </section>
+                </div>
         </div>
     </section>
     <section class="discography" id="discography">
@@ -192,10 +195,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h3 class="text-center">{{discographyTitle}}</h3>
             <p class="text-center about-text">{{{discographyText}}}</p>
             <br/>
-            <div class="row">
+            <div class="row row-centered">
         {{#each discography}}
                 <!--{{#every_nth_skip_first @index 4}}</div><div class="row row-centered">{{/every_nth_skip_first}}-->
-            <div class="col-xs-12 col-sm-4 col-lg-3 col-md-3 col-centered"><img src="{{discImage}}" class="discImage img-responsive"></div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4 col-centered"><img src="{{discImage}}" class="discImage img-responsive"></div>
         {{/each}}
             </div>
         </div>
