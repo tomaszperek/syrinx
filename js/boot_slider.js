@@ -2,9 +2,9 @@
 $(document).ready(function(){
 
 	$bootSlider = {
-		interval : 1000,
+		interval : 7500,
 		animate : "opacity", // opacity || flipping
-		fadeOutSpeed: 250 // or fast
+		fadeOutSpeed: 1500 // or fast
 	};
 
 	_sliderInit();
