@@ -88,9 +88,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="opacity"></div>
                             <div class="img_large"
                                  style="background-image:url('{{this}}'); background-position:center; background-repeat:no-repeat">
-                                <div class="container">
+                                <div class="container" id="syrinx-name-on-first-section">
                                     <p>
-                                        <span class="text-with-shadow"><br/><br/>{{../syrinx}}</span>
+                                        <span  class="text-with-shadow"><br/><br/>{{../syrinx}}</span>
                                     </p>
                                 </div>
                             </div>
@@ -173,8 +173,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!--</div>-->
     <!--</section>-->
     <!-- work section -->
-    <section class="work" id="work"
-             style="">
+    <section class="work" id="work">
         <div class="container">
             <h3 class="text-center">{{ourMusic}}</h3>
             <!--<p class="text-center">{{ourMusicText}}</p>-->
@@ -182,7 +181,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 {{#each videos}}
                 <iframe type="text/html" width="320" height="300"
                         src="{{src}}?enablejsapi=1&origin=http://syrinx.by"
-                        frameborder="0" allowfullscreen class="discImage" style="width: 320px !important; margin: 50px 25px 0 25px"></iframe>
+                        frameborder="0" allowfullscreen class="discImage music-iframe"></iframe>
                 {{/each}}
                 <div><br/><br/><br/><br/><br/></div>
             </section>
@@ -195,8 +194,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <br/>
             <div class="row">
         {{#each discography}}
-                {{#every_nth_skip_first @index 4}}</div><div class="row row-centered">{{/every_nth_skip_first}}
-            <div class="col-xs-3 col-lg-3 col-md-3 col-centered"><img src="{{discImage}}" class="discImage img-responsive"></div>
+                <!--{{#every_nth_skip_first @index 4}}</div><div class="row row-centered">{{/every_nth_skip_first}}-->
+            <div class="col-xs-12 col-sm-4 col-lg-3 col-md-3 col-centered"><img src="{{discImage}}" class="discImage img-responsive"></div>
         {{/each}}
             </div>
         </div>
@@ -274,7 +273,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </script>
 <!-- /footer section -->
-<a href="#0" class="cd-top">Top</a>
+//<a href="#0" class="cd-top">Top</a>
 <!-- js files -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
